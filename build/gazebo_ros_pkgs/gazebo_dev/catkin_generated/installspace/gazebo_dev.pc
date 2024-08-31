@@ -1,0 +1,8 @@
+prefix=/home/dandy/task-10.1/install
+
+Name: gazebo_dev
+Description: Description of gazebo_dev
+Version: 2.9.2
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

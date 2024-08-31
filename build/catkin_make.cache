@@ -1,0 +1,2 @@
+gazebo_ros_pkgs/gazebo_dev:gazebo_ros_pkgs/gazebo_msgs:gazebo_ros_pkgs/gazebo_plugins:gazebo_ros_pkgs/gazebo_ros:gazebo_ros_pkgs/gazebo_ros_control:gazebo_ros_pkgs/gazebo_ros_pkgs:turtlebot3_simulations/turtlebot3_fake:turtlebot3_simulations/turtlebot3_gazebo:turtlebot3_simulations/turtlebot3_simulations
+-DCATKIN_DEVEL_PREFIX=/home/dandy/task-10.1/devel -DCMAKE_INSTALL_PREFIX=/home/dandy/task-10.1/install -G Unix Makefiles
