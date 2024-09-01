@@ -1,5 +1,5 @@
 # Table of content
-### [Simulation in gazebo](https://github.com/dandyidk/Task-10.1/tree/master?tab=readme-ov-file#Simulation-in-gazebo)
+### - [Simulation in gazebo](https://github.com/dandyidk/Task-10.1/tree/master?tab=readme-ov-file#Simulation-in-gazebo)
 
 
 
