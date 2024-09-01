@@ -4,7 +4,7 @@
 
 To set up the program use:
 ``` bash
-./setup.sh
+$ ./setup.sh
 ```
 This terminal will show the Imu readings
 
