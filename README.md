@@ -7,6 +7,8 @@
 
 - #### [Visualizing](https://github.com/dandyidk/Task-10.1/tree/master?tab=readme-ov-file#To-visualize-the-data)
 
+- #### [Files documetation](https://github.com/dandyidk/Task-10.1/tree/master?tab=readme-ov-file#File-content)
+
 
 ##### *do note that all commands must be in the work space directory*
 **************
@@ -168,4 +170,24 @@ Press the clog button thats labeled configuration plot, add curves then choose w
 Once chosen the axis go to that axis configurations and at topic type /imu_degrees/yaw/filtered, type is float32 and at field choose data float32. 
 
 While the other axis go to topic and choose /imu_degrees/yaw, at type choose Float 32 and at field choose data float32, press ok then press run plot at the top right next to the clog
+
+
+********************
+# File content
+
+### Scripts
+- start_simulation.sh:
+   - It sources the package, exports the turtlebot3_model to be burger and initiate the simulation which also initiate the ROS master
+- control.sh:
+   - like the previous script it sources the package and exports the model to be burger, and it runs the command that allows control of the robot
+- kalman_filter.sh:
+  - runs the kalman-filter.py file
+### kalman-filter.py:
+Subscribes to the /imu topic, then it takes and converts the imu readings from the /imu topic by using the tf.transformation function for transforming from quaternion to euler, then changes the readings from radian to degree
+
+It publish the conversion to 2 topics, one for the 3 orientation readings called /imu_degrees and the other for the yaw readings called /imu_degrees/yaw, both in degrees
+
+Then it filters the yaw by applying kalman filter, with the new filtered yaw the script publishes it to a new topic called /imu_degrees/yaw/filtered
+
+
 
