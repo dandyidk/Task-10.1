@@ -5,6 +5,7 @@
 
 - #### [Formatting Imu data](https://github.com/dandyidk/Task-10.1/tree/master?tab=readme-ov-file#Formatting-the-Imu-data)
 
+- #### [Visualizing](https://github.com/dandyidk/Task-10.1/tree/master?tab=readme-ov-file#To-visualize-the-data)
 
 
 ##### *do note that all commands must be in the work space directory*
