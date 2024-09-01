@@ -1,10 +1,15 @@
+# Table of content
+
+
+
+
 ##### *do note that all commands must be in the work space directory*
 **************
 # Simulation in gazebo
 
 To set up the program use:
 ``` bash
-$ ./setup.sh
+ ./setup.sh
 ```
 This terminal will show the Imu readings
 
