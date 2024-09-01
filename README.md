@@ -3,18 +3,18 @@
 # Simulation in gazebo
 
 To set up the program use:
-```
+``` bash
 ./setup.sh
 ```
 This terminal will show the Imu readings
 
 To launch simulation, open up another terminal and write:
-```
+``` bash
  ./start_simulation.sh
 ```
 
 To move the bot open up another terminal and do:
-```
+``` bash
 ./control.sh
 ```
 The bot moves in automatic mode where pressing any of the W A S D will get it to increase the speed at a certain direction, press the spacebar to stop it completely, press ctrl c to quit the program
@@ -23,19 +23,19 @@ The bot moves in automatic mode where pressing any of the W A S D will get it to
 # To add gaussian noise
 
 Type:
-```
+``` bash
 rospack find turtlebot3_description
 ```
 The directory that appears copy it and go to it using cd
 
 Afterwards type:
-```
+``` bash
 cd urdf
 ```
 Then type ls to check all the available files, the file we are looking for should be named something similar to turtlebot3_burger.gazebo.xacro.
 
 Type the following command:
-```
+``` bash
 sudo nano turtlebot3_burger.gazebo.xacro
 ```
 scroll down until you see
@@ -117,7 +117,7 @@ save and exit
 
 To turn the Imu data to degrees and apply kalman_filter into the yaw:
 
-```
+``` bash
 ./kalman_filter.sh
 ```
 
@@ -139,7 +139,7 @@ To visualize anything we have to run
 
 ### To visualize Lidar
 Run:
-```
+``` bash
 rosrun rviz rviz
 ```
 Then press add, scroll down until you see the word laser scan
@@ -150,7 +150,7 @@ then go to the global options at the top of the display panel and change the fix
 
 ### To plot the filtered yaw with the noisy yaw
 Run:
-```
+``` bash
 rqt_multiplot
 ```
 Press the clog button thats labeled configuration plot, add curves then choose whether you want the filtered data at x or y axis.
